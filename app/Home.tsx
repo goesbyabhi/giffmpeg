@@ -3,6 +3,7 @@
 import { FFmpeg } from '@ffmpeg/ffmpeg'
 import { fetchFile, toBlobURL } from '@ffmpeg/util'
 import { useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
 import './Home.css'
 
 export default function Home() {
@@ -76,7 +77,7 @@ export default function Home() {
                 </span>
             </button>
             <br />
-            <img src="" ref={gifRef} alt="" width="250" />
+            <Image src="" ref={gifRef} alt="" width="250" />
         </div>
     ) : (
         <div>
